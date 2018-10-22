@@ -1,0 +1,27 @@
+<ion-view class="urban-view">
+  <ion-nav-title>
+    <span>Urban</span>
+  </ion-nav-title>
+  <ion-content>
+
+    <div class="list card">
+  <div class="item item-image">
+      <img src="img/cover-urban.png">
+    </div>
+    <audio controls autoplay>
+     <source src="http://server10.servistreaming.com:9006/stream?type=.mp3" type="audio/mpeg">
+    <p>If you can read this, your browser does not support the audio element.</p>
+     </audio>
+     <a ui-sref="app.urban"> <img class="refresh" src="img/refresh.png"></a>
+    </div>
+    <div class="row">
+      <div class="col"><a ui-sref="app.top40"><img class="cat2" src="img/top40v2.png"></a></div>
+      <div class="col"><a ui-sref="app.tropical"><img class="cat2" src="img/tropicalv2.png"></a></div>
+      <div class="col"><a ui-sref="app.urban"><img class="cat2" src="img/urbanv2.png"></a></div>
+    </div>
+    <div style="height:50px;"></div>
+  </ion-content>
+  <div class="bar bar-footer">
+    <iframe id="wppas_zone" frameborder="0" src="http://www.tusexitosfm.com/?wppaszoneid=721" width="100%" height="50" scrolling="no"></iframe>
+  </div>
+</ion-view>

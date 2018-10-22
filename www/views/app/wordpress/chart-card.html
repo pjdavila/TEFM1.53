@@ -1,0 +1,19 @@
+
+<div class="list" dynamic-anchor-fix>
+    <a class="item item-chart-left">
+      <img src="{{post.thumbnail_images.medium.url}}">
+      <div class="rank" ng-bind-html="post.custom_fields.rank">1</div>
+        <h2 ng-bind-html="post.title | rawHtml"></h2>
+        <p class="chartTxt" ng-bind-html="post.custom_fields.artista"></p>
+        <p class="chartTxt">LAST WEEK: <span style="color:#000000" ng-bind-html="post.custom_fields.last_week"></span></p>
+
+        <a class="button buy">
+            <audio controls>
+               <source src="http://www.tusexitosfm.com/wp-content/uploads/Tu-Con-El_Charlie-Cruz-epMastering.mp3" type="audio/mpeg">
+              <p>If you can read this, your browser does not support the audio element.</p>
+            </audio>
+            <center><img style="width: 100px;margin: 5px;height: 100px;" src="img/play.png" ng-click="playAudio()" ng-hide="!pause" alt="" id="s_play" class="animated bounceIn"></center>
+            <center> <img style="width: 100px;margin: 5px;height: 100px;" src="img/pause.png" ng-click="pauseAudio()" ng-hide="pause" alt="" id="s_play" class="animated bounceIn"></center>
+        </a>
+    </a>
+</div>

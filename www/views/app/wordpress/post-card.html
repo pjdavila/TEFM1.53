@@ -1,0 +1,9 @@
+
+<div class="list">
+
+    <a class="item item-thumbnail-left" ui-sref="app.post({postId :post.id})">
+      <img src="{{post.thumbnail_images.medium.url}}">
+        <h2 ng-bind-html="post.title | rawHtml"></h2>
+
+    </a>
+</div>

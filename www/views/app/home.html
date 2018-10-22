@@ -1,0 +1,42 @@
+<ion-view class="home-view">
+  <ion-nav-title>
+    <span>Tus Exitos FM</span>
+  </ion-nav-title>
+  <ion-content>
+<ion-slide-box auto-play="true" slide-interval="1000" on-slide-changed="slideHasChanged($index)">
+  <ion-slide slide-card ng-repeat="post in slides"></ion-slide>
+</ion-slide-box>
+
+<div class="row">
+  <div class="col"><a ui-sref="app.top40"><img class="cat" src="img/top40v2.png"></a></div>
+</div>
+<div class="row">
+  <div class="col"><a ui-sref="app.tropical"><img class="cat" src="img/tropicalv2.png"></a></div>
+</div>
+<div class="row">
+  <div class="col"><a ui-sref="app.urban"><img class="cat" src="img/urbanv2.png"></a></div>
+</div>
+
+<span class="item item-icon-left">
+   <i class="icon ion-ios-book"></i>
+  Ultimas Noticias
+ </span>
+    <!-- Refresh to get the new posts -->
+    <!--ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()">
+    </ion-refresher-->
+
+    <div class="posts">
+      <div post-card ng-repeat="post in posts" class="post-card"></div>
+    </div>
+
+    <!-- Infinit scroll -->
+    <!--ion-infinite-scroll ng-if="moreDataCanBeLoaded()" on-infinite="loadMoreData()" distance="1%">
+    </ion-infinite-scroll--->
+    <a ui-sref="app.category({categoryTitle: Noticias, categoryId: 39})" class="button button-full button-positive">
+    Más Noticias
+  </a>
+  </ion-content>
+  <div class="bar bar-footer">
+    <iframe id="wppas_zone" frameborder="0" src="https://www.tusexitosfm.com/?wppaszoneid=721" width="100%" height="50" scrolling="no"></iframe>
+  </div>
+</ion-view>

@@ -1,0 +1,28 @@
+{
+  "name": "TusExitosFM",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/apilink/",
+      "proxyUrl": "http://www.tusexitosfm.com/banner.php"
+    },
+    {
+      "path": "/adzone1/",
+      "proxyUrl": "http://tusexitosfm.com/?wppaszoneid=721"
+    }
+  ],
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "scss/**/*"
+  ],
+  "documentRoot": "www",
+  "type": "ionic1",
+  "pro_id": "1b2417dd"
+}
